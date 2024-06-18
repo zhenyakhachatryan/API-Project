@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View User</title>
+</head>
+<body>
+     <h2>View User</h2>
+     <a href="/">Back</a>
+     <form action="/view_user" method="post">
+        <input type="number" id="user_id" name="user_id" placeholder="User ID">
+        <button type="submit">View User</button>
+     </form>
+     {% if Error%}
+        <p>{{Error}}</p>
+     {% elif Message %}
+        <p>{{Message}}</p>
+     {% endif %}
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete User</title>
+</head>
+<body>
+    <h2>Delete User</h2>
+    <a href="/">Back</a>
+    <form action="/delete_user" method="post">
+        <input type="number" id="user_id" name="user_id" placeholder="User ID">
+        <button type="submit">Delete User</button>
+    </form>
+    {% if Error%}
+        <p>{{Error}}</p>
+    {% elif Message %}
+        <p>{{Message}}</p>
+    {% endif %}
+
+</body>
+</html>

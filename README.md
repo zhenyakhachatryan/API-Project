@@ -1,6 +1,4 @@
 "# API-Project" 
 "# API-Project" 
 "# API-Project" 
--activate virtual enviroment 
--venv\Scripts\activate
--run uvicorn main: app --reload
+ activate virtual enviroment with venv\Scripts\activate and run uvicorn main: app --reload
